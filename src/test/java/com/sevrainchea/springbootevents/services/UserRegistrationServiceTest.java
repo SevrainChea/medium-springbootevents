@@ -21,7 +21,7 @@ public class UserRegistrationServiceTest {
     @Test
     public void test() {
 
-        final User user = User.builder().username("myUser").build();
+        final User user = User.builder().userName("myUser").build();
         userRegistrationService.registerUser(user);
         assertEquals(1, userRepository.findAll().size());
     }
